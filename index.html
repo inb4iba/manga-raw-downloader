@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; 
+          script-src 'self'; 
+          font-src 'self' https://fonts.gstatic.com;
+          style-src 'self' https://fonts.googleapis.com"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Raw Downloader</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <label for="site">Sites for download</label>
+        <select name="site" id="manga_site">
+          <option value="site1" active>rawmanga.top</option>
+        </select>
+      </section>
+
+      <section>
+        <label for="manga_url">Chapter URL</label>
+        <input
+          type="text"
+          name="manga_url"
+          id="manga_url"
+          placeholder="Place the chapter URL"
+        />
+      </section>
+
+      <section>
+        <label for="pages">Number of pages</label>
+        <input type="number" name="pages" id="pages" min="0" placeholder="20" />
+      </section>
+
+      <section>
+        <label for="path">Where to save</label>
+        <input type="text" name="path" id="path" disabled />
+        <button id="dir">Download Directory</button>
+      </section>
+
+      <section>
+        <button id="download">Download Files</button>
+      </section>
+    </main>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>

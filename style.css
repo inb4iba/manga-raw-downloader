@@ -1,0 +1,86 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+:root {
+  --color-primary: hsl(173, 27%, 82%);
+  --color-secondary: hsl(115, 82%, 13%);
+  --bg-primary: hsl(260, 20%, 12%);
+  --bg-secondary: hsl(83, 82%, 52%);
+  --border-primary: hsl(264, 27%, 18%);
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--color-primary);
+}
+
+main {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: auto;
+}
+
+select,
+input[type="text"],
+input[type="number"] {
+  font-size: 1rem;
+  background: var(--bg-primary);
+  border: 2px solid var(--border-primary);
+  padding: 0.5rem 1.5rem;
+  color: var(--color-primary);
+  border-radius: 1rem;
+}
+
+select {
+  appearance: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+button {
+  border: 2px solid var(--border-primary);
+  background: var(--bg-primary);
+  color: var(--color-primary);
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  filter: brightness(1.65);
+  transition: filter 200ms;
+}
+
+button:hover {
+  filter: brightness(2.15);
+}
+
+#download {
+  font-size: 1.25rem;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  color: var(--color-secondary);
+  filter: brightness(1);
+}
+
+#download:hover {
+  filter: brightness(.85);
+}
