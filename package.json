@@ -1,7 +1,7 @@
 {
   "name": "raw-downloader",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "src/main.js",
   "author": "Icaro Andrade <iba1987@gmail.com>",
   "license": "MIT",
   "scripts": {
