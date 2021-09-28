@@ -11,6 +11,7 @@ function createWindow() {
     title: "Manga Raw Downloader",
     width: 400,
     height: 600,
+    autoHideMenuBar: true,
     resizable: false,
     maximizable: false,
     webPreferences: {

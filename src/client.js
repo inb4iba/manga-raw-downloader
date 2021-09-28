@@ -29,11 +29,17 @@ downloadBtn.addEventListener("click", (event) => {
 });
 
 mangaSite.addEventListener("change", (event) => {
+  const pagesDisMsg = "Pages disabled, all pages gonna be downloaded!";
+
   if (mangaSite.value === "site2") {
-    console.log("TESTESTESTSSE");
-    pages.value = 777;
+    status.textContent = pagesDisMsg;
+    status.className = "start";
+    pages.value = 999999999999;
     pages.disabled = true;
   } else {
+    if (status.textContent === pagesDisMsg) {
+      status.textContent = "Pages enabled!";
+    }
     pages.value = "";
     pages.disabled = false;
   }
