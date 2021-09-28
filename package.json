@@ -1,5 +1,6 @@
 {
   "name": "raw-downloader",
+  "productName": "manga-raw-downloader",
   "description": "A simple program that downloads raw manga chapters.",
   "version": "1.0.0",
   "main": "src/main.js",
